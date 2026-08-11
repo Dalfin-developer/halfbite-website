@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+  background-color: yellow; 
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+/* --- BASE NAVBAR STYLES (Desktop View) --- */
+/* Desktop layout for links */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative; /* Keeps the absolute dropdown relative to the navbar */
+}
+.logo{
+  font-size: xx-large;
+
+}
+.logo,.brandname{
+  color: #ff5200;
+}
+.navlink {
+  display: flex;
+  align-items: center; 
+  gap: 20px;
+}
+.logobrandname {
+  display: flex;
+  align-items: center; 
+  gap: 10px;          
+}
+
+#check {
+  display: none;
+}
+
+
+.icons {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+
+.links {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap; 
+}
+
+
+#box1 {
+  border: 1px solid black;
+  padding: 8px 14px;
+  border-radius: 12px;
+  transition: border-color 0.2s ease;
+}
+
+#box1:hover {
+  border-color: white;
+}
+
+
+#box2 {
+  background-color: black;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+
+.heading {
+  display: grid;
+  grid-template-rows: auto auto;
+  place-items: center;
+  margin-top: 30px;
+  padding: 0px 20px;
+}
+
+.heading h1 {
+  font-size: clamp(26px, 4vw, 42px); 
+  font-weight: 900;           
+  color: #111111;          
+  text-align: center;
+  margin-bottom: 16px;
+  letter-spacing: -1px;       
+}
+
+.heading p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333333;              
+  text-align: center;
+  max-width: 850px;           
+  margin: 0 auto 20px auto;    
+  line-height: 1.6;  
+  padding: 0 10px;          
+}
+
+.heading p inline {
+  color: orangered;
+  font-weight: 800;
+}
+
+
+.location_search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  flex-wrap: wrap; 
+}
+
+.location, .search {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 12px 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  width: 100%;
+}
+
+.location {
+  max-width: 300px;
+}
+
+.search {
+  max-width: 450px;
+}
+
+.location input, .search input {
+  border: none; 
+  outline: none;             
+  background: transparent;   
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+#locationDot {
+  color: #ff5200;
+  margin-right: 10px;
+}
+
+#angledown, .search i {
+  color: #686b78;
+  cursor: pointer;
+}
+
+#angledown {
+  margin-left: 10px;
+}
+
+/* 9. CARDS SECTION */
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 20px;
+  flex-wrap: wrap; 
+}
+
+.card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 350px; 
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.card-text {
+  margin: 20px;
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+
+.card-text h2 {
+  color: #2c2b2b;
+  font-size: 24px;
+  font-weight: 900;
+  padding-bottom: 4px;
+}
+
+.card-text p {
+  color: #726464;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.offer-tag {
+  color: #ff5200;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  background: linear-gradient(90deg, #fff2ed 0%, #ffe6dc 100%);
+  padding: 6px 12px;
+  border-radius: 9px;
+  display: inline-block;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: auto;
+}
+
+.card-bottom .arrow, .card-bottom i {
+  margin: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #ff5200;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.card-image {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+.foodHead{
+    font-size: x-large;
+    margin-top: 115px;
+    margin-left: 30px;
+}
+
+.imageGrid{
+display:grid;
+grid-template-columns: repeat(5,1fr);
+align-items: center;
+margin-left: 30px;
+margin-top: 10px;
+gap: 8px;
+}
+.item{
+    background-color: #ffffff;
+    text-align: center;
+    max-width: 200px;
+    height: 200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    border-radius: 12px;
+}
+.item img{
+    width:100%;
+    height: 120px;         
+    object-fit: contain;   
+    margin-bottom: 10px;
+}
+.item p{
+    font-size: 18px;
+    font-weight: 600;
+    color:rgb(73, 70, 70)
+}
+.download{
+    margin:60px 200px ;
+    max-width: 1200px;
+    height:300px;
+    background-color: #ff5200;
+    width: auto;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+.dowloadText{
+  padding:10px;
+  align-items: center;;
+  h1{
+    color: rgb(46, 42, 42);
+  }
+  p{
+    color:#343539;
+    font-weight: 600;
+    font-size: medium;
+  }
+}
+ .brandName{
+    color:yellow;
+    font-size: large;
+    font-weight: 600;
+    text-decoration: none;
+ }
+   
+
+/*  MOBILE MEDIA QUERY */
+@media (max-width: 768px) {
+  
+.icons {
+    display: block;
+  }
+  
+  #cancelicon {
+    display: none;
+  }
+
+  .navlink {
+    position: absolute;
+    width: 100%;
+    top: 100%; 
+    left: 0px;
+    display: none; 
+    background-color: rgba(11, 13, 111, 0.9); 
+    backdrop-filter: blur(1px);
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .links {
+    text-align: center;
+    margin: 1.2rem 0px;
+    color: red;
+    display: block;
+  }
+
+  /* CHECKBOX LOGIC*/
+  
+  #check:checked ~ .icons #menuicon {
+    display: none;
+  }
+  
+  #check:checked ~ .icons #cancelicon {
+    display: flex;
+  }
+  
+  #check:checked ~ .navlink {
+    display: flex; 
+  }
+
+ 
+  .location, .search {
+    max-width: 50%;
+    padding: 8px 12px; 
+    border-radius: 8px;
+  }
+  .location input, .search input {
+    font-size: 13px; 
+  }
+
+  
+  .card {
+    max-width: 280px; 
+    height: 300px;    
+    border-radius: 16px;
+  }
+  
+  .card-text h2 {
+    font-size: 20px;
+  }
+  
+  .card-image {
+    width: 130px; 
+    right: -5px;
+    bottom: -5px;
+  }
+  
+  .card-bottom .arrow {
+    width: 32px;  
+    height: 32px;
+    margin: 15px;
+  }
+}
+
+

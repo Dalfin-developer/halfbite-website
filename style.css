@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 1. Header Background */
+header{
+  background-color: yellow; 
+  width: 100%;
+}
+
+/* 2. Navbar Container & Side Margins */
+.navbar {
+  max-width: 1240px;      
+  margin: 0 auto;         
+  padding: 50px 40px;     
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 3. Logo and Brand Area */
+.logobrandname {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: rgb(255, 69, 0);
+}
+
+.logobrandname i {
+  font-size: 32px;
+}
+
+.brandname {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+/* 4. Links Section */
+.LINKS {
+  display: flex;
+  align-items: center;
+  gap: 32px; /* Uniform spacing between all header links */
+}
+
+.LINKS a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* 5. "Get the App" Outlined Button */
+.LINKS .box1 {
+  border: 1px solid black;
+  padding: 10px 18px;
+  border-radius: 12px;
+  transition: border-color 0.2s ease;
+}
+
+.LINKS .box1:hover {
+  border-color: white;
+}
+
+/* 6. "Sign In" Solid Black Button */
+.LINKS .box2 {
+  background-color: black;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+.heading{
+
+  display:grid;
+  grid-template-rows: auto auto;
+  place-items: center;
+  margin-top: 60px;
+  padding: 0px 20px;
+  h1{
+  font-size: 42px;             
+  font-weight: 900;           
+  color: #111111;          
+  text-align: center;
+  margin-bottom: 16px;
+  letter-spacing: -1px;       
+  text-decoration: none;      
+}
+  p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;              
+  text-align: center;
+  max-width: 950px;           
+  margin: 0 auto 30px auto;    
+  line-height: 1.6;            
+}
+  
+  p span {
+  font-weight: 700;
+  color: #d93800;              
+}
+  
+  p{
+  padding:0px 200px 0px 200px;
+  font-weight: bold;
+  inline{
+    color: orangered;
+  }
+}
+}
+.location_search{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:16px;
+  padding:  40px;
+}
+.location ,.search {
+  background-color: #ffffff;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:10px;
+  padding:10px;
+}
+.location{
+  width:300px;
+}
+.search{
+  width: 450px;
+}
+.location input, .search input {
+  border: none; 
+  outline: none;             
+  background: transparent;   
+  width: 100%;
+  font-size: 15px;
+  color: #333;
+  text-align: center;
+}
+.center-bottom-image {
+  display: flex;
+  justify-content: center;     
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;            
+  padding-bottom: 20px;
+}
+.center-bottom-image img {
+  width: 280px;                
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1)); /* Adds a soft professional shadow */
+}
+
+
+/* Optional: Icon colors and spacing */
+#locationDot {
+  color: #ff5200;
+  margin-right: 10px;
+}
+
+#angledown, .search i {
+  color: #686b78;
+  cursor: pointer;
+}
+
+#angledown {
+  margin-left: 10px;
+}
+/*styling of cards*/
+.cards{
+  display:flex;
+  justify-content:space-evenly;
+  align-items: center;
+  gap:15px;
+  padding: 30px 0px;
+}
+.card{
+  background-color: #ffffff;
+  width: 360px;
+  height:400px;
+  display:flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transition-duration: 2s;
+}
+.card-text {
+  margin:20px;
+  letter-spacing: 1.5px;
+}
+.card-text h2{
+  color: #2c2b2b;
+  font-size: 1000;
+  font-weight: 900;
+  padding-bottom: 2px;
+}
+.card-text p{
+  color: #726464;
+  font-size: 700;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.offer-tag{
+  color: red;
+  font-size: 15px;
+  text-decoration: none;
+  background:linear-gradient(90deg, #fff2ed 0%, #ffe6dc 100%);
+  padding: 4px 12px;
+  border-radius: 9px;
+}
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: auto; /* Pushes this container to the absolute bottom of the card */
+}
+.card-bottom .arrow, .card-bottom i {
+  margin:20px;
+  width: 40px;
+  height: 40px;
+  background-color: #ff5200;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  text-decoration: none;
+}
+.card-image {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: -15px; /* Anchors the burger image neatly to the bottom-right corner */
+  margin-right: -10px;
+  margin-bottom: -40px;
+  margin-right: -40px;
+}
+.card:hover{
+ translate: 10px -15px;
+} 
